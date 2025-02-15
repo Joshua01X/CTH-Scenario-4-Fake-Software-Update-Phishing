@@ -21,7 +21,7 @@ A corporate employee receives an email appearing to be from IT support, instruct
 
 ## Steps Taken
 
-### Phase 1
+### Investigating File Downloads
 A phishing email masquerading as an IT support message instructs users to install a "critical software update." Clicking the link results in the download of a PowerShell script onto the victim’s machine.
 
 **KQL Query Used:**
@@ -35,7 +35,7 @@ DeviceFileEvents
 
 ---
 
-### Phase 2
+### Process Execution
 After the initial download, the PowerShell script executes on the infected machine, initiating further malicious actions.
 
 **First KQL Query Used:**
@@ -64,7 +64,7 @@ DeviceProcessEvents
 
 ---
 
-### Phase 3
+### Verifying C2 Server Connection
 The malicious script initiates outbound communication with an external command-and-control (C2) server, potentially exfiltrating sensitive credentials.
 
 **KQL Query Used:**
