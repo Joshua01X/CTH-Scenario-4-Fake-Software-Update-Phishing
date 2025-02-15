@@ -15,7 +15,9 @@ The names and identifiers used in this report, such as the device name "tphish" 
 A corporate employee receives an email appearing to be from IT support, instructing them to download and install a "critical software update." The email contains a hyperlink leading to a malicious website hosting a PowerShell payload. The user, believing the email to be legitimate, downloads and executes the script, resulting in further compromise. The script enables adversaries to establish persistent access, execute remote commands, and potentially exfiltrate sensitive information through a command-and-control (C2) server. The objective of this investigation is to trace the entire attack chain, identify affected assets, and mitigate the threat.
 
 ## High-Level IoC Discovery Plan
-The threat hunting process follows a structured methodology to detect IoCs associated with this attack scenario. The investigation begins by identifying malicious file downloads, followed by tracking script execution on endpoints. Further queries analyze network connections to determine whether communication with external malicious entities occurred. The final phase involves correlating observed behaviors with MITRE ATT&CK techniques to understand the adversary’s tactics and techniques. Each step is reinforced by executing targeted KQL queries in MDE.
+1. Identify malicious file downloads as the initial point of compromise.
+2. Track script execution on endpoints to analyze further malicious actions.
+3. Examine network connections to determine whether communication with external malicious entities occurred.
 
 ## Steps Taken
 
