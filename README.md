@@ -8,6 +8,9 @@ This project focuses on a comprehensive threat hunting investigation using a vir
 **Threat Detection Platform:** Microsoft Defender for Endpoint (MDE)  
 **Query Language:** Kusto Query Language (KQL) for log analysis  
 
+## Disclaimer
+The names and identifiers used in this report, such as the device name "tphish" and the filename ending with ".ps1," are specifically chosen for demonstrative and investigative purposes.These identifiers are arbitrary selections designed to facilitate structured analysis and reproducibility in a controlled research environment.
+
 ## Scenario
 A corporate employee receives an email appearing to be from IT support, instructing them to download and install a "critical software update." The email contains a hyperlink leading to a malicious website hosting a PowerShell payload. The user, believing the email to be legitimate, downloads and executes the script, resulting in further compromise. The script enables adversaries to establish persistent access, execute remote commands, and potentially exfiltrate sensitive information through a command-and-control (C2) server. The objective of this investigation is to trace the entire attack chain, identify affected assets, and mitigate the threat.
 
